@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Matricula</title>
+<style>
+ body {
+ background: #CEF6F5;
+ }
+ form {
+  
+  margin: 0 auto;
+  margin-top: 3em;
+  width: 50%;
+ }
+ .texto {
+   margin: .5em;   
+   margin-left: 1em;
+ }
+ .cuadro {
+   margin-left: 2em;
+   margin-bottom: 1.3em;
+ }
+ 
+ 
+</style>
+</head>
+<body>
+ <form action="Matricula" method="post" enctype="multipart/form-data">
+ <fieldset>
+  <legend style="font-size: 1.3em">MATRÍCULA</legend>
+    <div class="texto">
+      <label>NÚMERO DE MATRÍCULA</label>
+    </div>
+    <div class="cuadro">
+     <input type="number"  id="numMatricula" name="numMatricula" />
+    </div>
+    
+    <div class="texto">
+      <label for="nombre">NOMBRE</label>
+    </div>
+    <div class="cuadro">
+     <input type="text" name="nombre" id="nombre"  />
+    </div>
+    
+    <div class="texto">
+      <label for="apellidos">APELLIDOS</label>
+    </div>
+    <div class="cuadro">
+     <input type="text" name="apellidos" id="apellidos" />
+    </div>
+       
+    <div class="texto">
+      <label>CURSO</label>
+    </div>
+    <div class="cuadro">
+     <input type="text"  id="curso" name="curso" />
+    </div>
+    
+    <div class="texto">
+    <label for="colegios" id="colegios">SELECCIONE UN COLEGIO    </label>
+    </div>
+    <div class="cuadro">
+     <select name="colegios"  >
+       <option value="aaa">aaa</option>
+       <option value="bbb">bbb</option>
+       <option value="ccc">ccc</option>
+       <option value="ddd">ddd</option>
+     </select> 
+     </div>
+     </fieldset>
+    
+    <div class="texto">
+     <input type="submit" name="enviar" id="enviar" value="Enviar" />
+    <input type="reset" name="reiniciar" id="reiniciar" value="Reiniciar" />
+    </div> 
+ </form>
+</body>
+</html>

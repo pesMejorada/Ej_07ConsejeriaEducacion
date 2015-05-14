@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario Colegio</title>
+<style>
+ body {
+ background: #CEF6F5;
+ }
+ form {
+  
+  margin: 0 auto;
+  margin-top: 3em;
+  width: 50%;
+ }
+ .texto {
+   margin: .5em;   
+   margin-left: 1em;
+ }
+ .cuadro {
+   margin-left: 2em;
+   margin-bottom: 1.3em;
+ }
+</style>
+</head>
+<body>
+  <form action="AltaColegio" method="post" enctype="multipart/form-data"> 
+  <fieldset>
+  <legend style="font-size: 1.3em">ALTA COLEGIO</legend>
+    <div class="texto">
+      <label for="nombre">NOMBRE</label>
+    </div>
+    <div class="cuadro">
+      <input type="text" name="nombre" id="nombre"  />
+    </div>
+    
+    <div class="texto">
+      <label for="direccion">DIRECCIÓN</label>
+    </div>
+    <div class="cuadro">
+      <input type="text" name="direccion" id="direccion" />
+    </div>
+    
+    <div class="texto">
+      <label>NÚMERO DE AULAS</label>
+    </div>
+    <div class="cuadro">
+      <input type="number"  id="numAulas" name="numAulas" />
+    </div>
+    
+    <div class="texto">
+      <label>NÚMERO DE ALUMNOS</label>
+    </div>
+    <div class="cuadro">
+      <input type="number"  id="numAlumnos" name="numAlumnos" />
+    </div>
+    </fieldset>
+    
+    <div class="texto">
+     <input type="submit" name="enviar" id="enviar" value="Enviar" /> 
+     <input type="reset" name="reiniciar" id="reiniciar" value="Reiniciar" />
+    </div>
+  </form>
+
+</body>
+</html>
