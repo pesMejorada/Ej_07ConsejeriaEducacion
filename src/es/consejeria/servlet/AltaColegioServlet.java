@@ -30,7 +30,7 @@ public class AltaColegioServlet extends HttpServlet {
 		 String nombre = request.getParameter("nombre");// el valor entre comillas
          // corresponde al name del input
         String direccion = request.getParameter("direccion");
-
+        System.out.println(request.getParameter("numAulas"));
         int numAulas = Integer.parseInt(request.getParameter("numAulas"));
 
       int numAlumnos=Integer.parseInt(request.getParameter("numAlumnos"));
@@ -45,8 +45,8 @@ public class AltaColegioServlet extends HttpServlet {
 		 String nombre = request.getParameter("nombre");// el valor entre comillas
          // corresponde al name del input
         String direccion = request.getParameter("direccion");
-
-        int numAulas = Integer.parseInt(request.getParameter("numAulas"));
+        System.out.println(request.getParameter("numAulas"));
+       int numAulas = Integer.parseInt(request.getParameter("numAulas"));
 
         int numAlumnos=Integer.parseInt(request.getParameter("numAlumnos"));
 	
