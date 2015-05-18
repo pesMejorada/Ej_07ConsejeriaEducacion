@@ -14,8 +14,8 @@ public class TablaColegio {
 
 	public TablaColegio() {
 		super();
-	
 		this.colegios= new ArrayList<Colegio>();
+		leerDeDisco();
 	}
     
 	
